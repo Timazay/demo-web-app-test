@@ -1,0 +1,143 @@
+
+^
+java:S1192"HDefine a constant instead of duplicating this literal "</font>" 3 times.(ûÓýè
+h
+java:S1192"MDefine a constant instead of duplicating this literal "<font size='" 3 times.(Ø€÷Ñùÿÿÿÿ
+u
+java:S1104"ZMake fontHeaderSize a static final constant or non-public and provide accessors if needed.(…Š¢°úÿÿÿÿ
+r
+java:S1104"WMake fontRowSize a static final constant or non-public and provide accessors if needed.( ¯ôúÿÿÿÿ
+u
+java:S1104"ZMake fontColumnSize a static final constant or non-public and provide accessors if needed.(‡›·Ÿúÿÿÿÿ
+q
+java:S1104"VMake HTML_START a static final constant or non-public and provide accessors if needed.(ìéÊ•þÿÿÿÿ
+o
+java:S1104"TMake HTML_END a static final constant or non-public and provide accessors if needed.(œÏ„õøÿÿÿÿ
+t
+java:S1104"^Make TABLE_START_BORDER a static final constant or non-public and provide accessors if needed.(ˆ¸Æ×
+r
+java:S1104"WMake TABLE_START a static final constant or non-public and provide accessors if needed.(š¥à¤þÿÿÿÿ
+j
+java:S1104"UMake TABLE_END a static final constant or non-public and provide accessors if needed.(óœƒR
+s
+java:S1104"XMake HEADER_START a static final constant or non-public and provide accessors if needed.(Å˜¨Îøÿÿÿÿ
+q
+java:S1104"VMake HEADER_END a static final constant or non-public and provide accessors if needed.(…ùûÏûÿÿÿÿ
+k
+java:S1104"UMake ROW_START a static final constant or non-public and provide accessors if needed.(ß¶Ìé
+i
+java:S1104"SMake ROW_END a static final constant or non-public and provide accessors if needed.(¬÷€ä
+n
+java:S1104"XMake COLUMN_START a static final constant or non-public and provide accessors if needed.(Áø –
+q
+java:S1104"VMake COLUMN_END a static final constant or non-public and provide accessors if needed.(ñÿ¦³þÿÿÿÿ
+x
+java:S1104"]Make FONT_HEADER_START a static final constant or non-public and provide accessors if needed.(Ø€÷Ñùÿÿÿÿ
+q
+java:S1104"[Make FONT_HEADER_END a static final constant or non-public and provide accessors if needed.(ûÓýè
+r
+java:S1104"]Make FONT_COLUMN_START a static final constant or non-public and provide accessors if needed.(µÃ¨
+v
+java:S1104"[Make FONT_COLUMN_END a static final constant or non-public and provide accessors if needed.(ÜÒª¼ùÿÿÿÿ
+p
+java:S1104 "ZMake FONT_ROW_START a static final constant or non-public and provide accessors if needed.(ß†áé
+n
+java:S1104!"XMake FONT_ROW_END a static final constant or non-public and provide accessors if needed.(ýñ³¦
+z
+java:S1104""dMake ROW_trBgcolorWhite_START a static final constant or non-public and provide accessors if needed.(Ú¥îÂ
+y
+java:S1104#"cMake ROW_trBgcolorGray_START a static final constant or non-public and provide accessors if needed.(ê¹Ý°
+O
+java:S1444"4Make this "public static fontHeaderSize" field final(…Š¢°úÿÿÿÿ
+L
+java:S1444"1Make this "public static fontRowSize" field final( ¯ôúÿÿÿÿ
+O
+java:S1444"4Make this "public static fontColumnSize" field final(‡›·Ÿúÿÿÿÿ
+K
+java:S1444"0Make this "public static HTML_START" field final(ìéÊ•þÿÿÿÿ
+I
+java:S1444".Make this "public static HTML_END" field final(œÏ„õøÿÿÿÿ
+N
+java:S1444"8Make this "public static TABLE_START_BORDER" field final(ˆ¸Æ×
+L
+java:S1444"1Make this "public static TABLE_START" field final(š¥à¤þÿÿÿÿ
+D
+java:S1444"/Make this "public static TABLE_END" field final(óœƒR
+M
+java:S1444"2Make this "public static HEADER_START" field final(Å˜¨Îøÿÿÿÿ
+K
+java:S1444"0Make this "public static HEADER_END" field final(…ùûÏûÿÿÿÿ
+E
+java:S1444"/Make this "public static ROW_START" field final(ß¶Ìé
+C
+java:S1444"-Make this "public static ROW_END" field final(¬÷€ä
+H
+java:S1444"2Make this "public static COLUMN_START" field final(Áø –
+K
+java:S1444"0Make this "public static COLUMN_END" field final(ñÿ¦³þÿÿÿÿ
+R
+java:S1444"7Make this "public static FONT_HEADER_START" field final(Ø€÷Ñùÿÿÿÿ
+K
+java:S1444"5Make this "public static FONT_HEADER_END" field final(ûÓýè
+L
+java:S1444"7Make this "public static FONT_COLUMN_START" field final(µÃ¨
+P
+java:S1444"5Make this "public static FONT_COLUMN_END" field final(ÜÒª¼ùÿÿÿÿ
+J
+java:S1444 "4Make this "public static FONT_ROW_START" field final(ß†áé
+H
+java:S1444!"2Make this "public static FONT_ROW_END" field final(ýñ³¦
+T
+java:S1444"">Make this "public static ROW_trBgcolorWhite_START" field final(Ú¥îÂ
+S
+java:S1444#"=Make this "public static ROW_trBgcolorGray_START" field final(ê¹Ý°
+p
+java:S3008"URename this field "HTML_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìéÊ•þÿÿÿÿ
+n
+java:S3008"SRename this field "HTML_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÏ„õøÿÿÿÿ
+s
+java:S3008"]Rename this field "TABLE_START_BORDER" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆ¸Æ×
+q
+java:S3008"VRename this field "TABLE_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(š¥à¤þÿÿÿÿ
+i
+java:S3008"TRename this field "TABLE_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óœƒR
+r
+java:S3008"WRename this field "HEADER_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å˜¨Îøÿÿÿÿ
+p
+java:S3008"URename this field "HEADER_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ùûÏûÿÿÿÿ
+j
+java:S3008"TRename this field "ROW_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß¶Ìé
+h
+java:S3008"RRename this field "ROW_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¬÷€ä
+m
+java:S3008"WRename this field "COLUMN_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Áø –
+p
+java:S3008"URename this field "COLUMN_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÿ¦³þÿÿÿÿ
+w
+java:S3008"\Rename this field "FONT_HEADER_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø€÷Ñùÿÿÿÿ
+p
+java:S3008"ZRename this field "FONT_HEADER_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ûÓýè
+q
+java:S3008"\Rename this field "FONT_COLUMN_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µÃ¨
+u
+java:S3008"ZRename this field "FONT_COLUMN_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÜÒª¼ùÿÿÿÿ
+o
+java:S3008 "YRename this field "FONT_ROW_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ß†áé
+m
+java:S3008!"WRename this field "FONT_ROW_END" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ýñ³¦
+y
+java:S3008""cRename this field "ROW_trBgcolorWhite_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¥îÂ
+x
+java:S3008#"bRename this field "ROW_trBgcolorGray_START" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¹Ý°
+F
+java:S30100"+Remove this assignment of "fontHeaderSize".(´²®­øÿÿÿÿ
+C
+java:S30101"(Remove this assignment of "fontRowSize".(µô ×ûÿÿÿÿ
+A
+java:S30102"+Remove this assignment of "fontColumnSize".(®³Ý¸
+F
+java:S1172."+Remove this unused method parameter "rows".(«òÝÝüÿÿÿÿ
+E	java:S106B"+Replace this use of System.out by a logger.(êÕ¨Êüÿÿÿÿ
+E	java:S106W"+Replace this use of System.out by a logger.(êÕ¨Êüÿÿÿÿ
+V	java:S125~"<This block of commented-out lines of code should be removed.(íê¦ùÿÿÿÿ
+F	java:S106ˆ"+Replace this use of System.out by a logger.(”Àêäûÿÿÿÿ

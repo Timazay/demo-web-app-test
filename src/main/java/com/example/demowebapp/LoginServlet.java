@@ -1,5 +1,11 @@
 package com.example.demowebapp;
 
+import com.example.demowebapp.model.User;
+import com.example.demowebapp.utils.ServletUtils;
+import com.example.demowebapp.utils.UserDAO;
+import com.example.demowebapp.utils.UserDAOImpl;
+import com.mysql.cj.Session;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -8,44 +14,37 @@ import java.util.Date;
 
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
+    private UserDAO userDAO = new UserDAOImpl();
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Login page request " + new Date());
-        request.getRequestDispatcher("/html/login.html").forward(request, response);
+        ServletUtils.forwardJSP("login", request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.setContentType("text/html");
+        final String email = request.getParameter("email");
+        final String pwd = request.getParameter("psw");
 
-        String userName = request.getParameter("first");
-        String userPwd = request.getParameter("password");
+        User user = null;
+        if ( (user = userDAO.findUserByEmail(email)) != null){
+            if (user.getPassword().equals(pwd)){
+                HttpSession session = request.getSession();
+                session.setMaxInactiveInterval(90);
 
-        // Check in DB
-        if(userName.equalsIgnoreCase("John")){
-            if(userPwd.equals("1234")){
-                String gender = request.getParameter("gender");
-                int age = Integer.valueOf(request.getParameter("age"));
-                if(age >= 18 && age <= 27){
-                    response.getWriter().println("Army =[");
-                }
-                if(gender.equalsIgnoreCase("male")){
-                    response.getWriter().println("Welcome back, mr " + userName);
-                } else {
-                    response.getWriter().println("Welcome back, ms " + userName);
-                }
+                // Store User obj within HTTP session
+                session.setAttribute("user", user);
 
-                 return;
-            } else {
-                // include
-                response.getWriter().println("<h2>Incorrect UserName or Password</h2>");
-
-                RequestDispatcher rd =  request.getRequestDispatcher("/html/login.html");
-                rd.include(request, response);
-
+                ServletUtils.forwardJSP("blog",request,response);
                 return;
-
+            } else {
+            //    response.getWriter().println("Bad credentials");
+                ServletUtils.forwardJSP("login", request, response);
+                return;
             }
         }
+
+
+
     }
 }

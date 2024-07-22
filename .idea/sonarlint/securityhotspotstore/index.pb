@@ -31,3 +31,27 @@ N
 src/main/webapp/cars-table.jsp,c\8\c8713796c418d35f9c288ef5ef98fc409ccecf84
 N
 src/main/webapp/currencies.jsp,2\3\23c9be15e7399bbfa42b4b032809a3f708a3d234
+g
+7src/main/java/com/example/demowebapp/utils/UserDAO.java,b\1\b1b538823eeef069e65f1654e8b67fd6823567e9
+d
+4src/main/java/com/example/demowebapp/model/User.java,5\9\59aa6bcc6aff7adf69134c4367a92ca1ef219006
+J
+src/main/webapp/about.html,2\d\2dbade310f33672ab111af17a81d4b20d63503cb
+i
+9src/main/java/com/example/demowebapp/Login123Servlet.java,9\6\96351ca107a8ebfd897abf6a36ea965312c5d8d8
+I
+src/main/webapp/login.jsp,8\5\85ee523d01e5e19376db640e846c91bbcb0a1c22
+g
+7src/main/java/com/example/demowebapp/utils/DBUtils.java,7\f\7fee8114f9f6895c6171380a4a6e40a1f0db44c7
+k
+;src/main/java/com/example/demowebapp/utils/UserDAOImpl.java,a\0\a0c7996adec0c1b0a73fdbc72353cfbb123ca6d4
+I
+src/main/webapp/blog.html,5\6\5652b6385831ae77b18111df15d38af23e6133b1
+H
+src/main/webapp/blog.jsp,f\9\f97036c73843b54d1e8a3bf41974360f2af06b24
+e
+5src/main/java/com/example/demowebapp/BlogServlet.java,4\6\467673bdefad92f5e888ff4e1b6b5877ab6ca753
+g
+7src/main/java/com/example/demowebapp/LogoutServlet.java,9\4\9486711be53e1f54e14408b1b24c5cdf475afde0
+f
+6src/main/java/com/example/demowebapp/LoginServlet.java,b\f\bff3cfe1b82e098856ca4efd3eefb4bf1dfa30e4

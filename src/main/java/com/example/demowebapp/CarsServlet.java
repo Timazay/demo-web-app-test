@@ -13,7 +13,8 @@ public class CarsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        request.setAttribute("cars", Arrays.asList("BMW", "HONDA", "AUDI", "OPEL"));
+      //  request.setAttribute("cars", Arrays.asList("BMW", "HONDA", "AUDI", "OPEL"));
+
         ServletUtils.forwardJSP("cars-table", request, response);
 
     }

@@ -1,0 +1,22 @@
+
+@	java:S106"+Replace this use of System.out by a logger.(ÇÁçð
+w
+java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Èè“Å
+1
+java:S3626&"Remove this redundant jump.(ûÁÝ…
+1
+java:S3626."Remove this redundant jump.(ûÁÝ…
+T
+java:S2130"9Use "Integer.parseInt" for this string-to-int conversion.(žƒµüøÿÿÿÿ
+s
+java:S1989"XHandle the following exception that could be thrown by "valueOf": NumberFormatException.(žƒµüøÿÿÿÿ
+f
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(·»Ñ¢
+k
+java:S1989!"PHandle the following exception that could be thrown by "getWriter": IOException.(åÍü’úÿÿÿÿ
+f
+java:S1989#"PHandle the following exception that could be thrown by "getWriter": IOException.(™ø°©
+f
+java:S1989)"PHandle the following exception that could be thrown by "getWriter": IOException.(äéÀÄ
+|
+java:S1989,"aHandle the following exceptions that could be thrown by "include": ServletException, IOException.(ß‘†¸üÿÿÿÿ

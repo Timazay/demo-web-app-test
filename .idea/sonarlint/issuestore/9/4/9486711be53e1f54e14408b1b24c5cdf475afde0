@@ -1,0 +1,14 @@
+
+ž
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹¨¯¿8ÎÑïæ‹2
+8
+java:S3626"Remove this redundant jump.(ûÁÝ…8‹þïæ‹2
+8
+java:S3626"Remove this redundant jump.(ûÁÝ…8ïëðæ‹2
+G	java:S106"+Replace this use of System.out by a logger.(‚éêÙ8ÑÑïæ‹2
+†
+java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(üéý‰ÿÿÿÿÿ8ÒÑïæ‹2
+
+java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8ö¨ðæ‹2
+`
+java:S1128">Remove this unused import 'com.example.demowebapp.model.User'.(Éª¦æúÿÿÿÿ8ÒÑïæ‹2

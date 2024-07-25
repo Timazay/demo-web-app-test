@@ -1,19 +1,23 @@
 
-G	java:S106"+Replace this use of System.out by a logger.(ÇÁçğ8…Ñùæ‹2
+c
+java:S1192"FDefine a constant instead of duplicating this literal "login" 3 times.(ËÔû‡8–»ğØ2
+G	java:S106"+Replace this use of System.out by a logger.(ÇÁçğ8ª™ïØ2
 
-java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8†Ñùæ‹2
+java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8«™ïØ2
 8
-java:S3626'"Remove this redundant jump.(ûÁİ…8†Ñùæ‹2
+java:S3626,"Remove this redundant jump.(ûÁİ…8«™ïØ2
 8
-java:S3626+"Remove this redundant jump.(ûÁİ…8†Ñùæ‹2
+java:S36260"Remove this redundant jump.(ûÁİ…8«™ïØ2
+
+java:S1989#"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8¬™ïØ2
 \
-java:S2441$":Make "User" serializable or don't store it in the session.(£™Õàûÿÿÿÿ8‡Ñùæ‹2
+java:S2441)":Make "User" serializable or don't store it in the session.(£™Õàûÿÿÿÿ8¬™ïØ2
 †
-java:S1989&"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(üéı‰ÿÿÿÿÿ8ˆÑùæ‹2
+java:S1989+"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(üéı‰ÿÿÿÿÿ8­™ïØ2
 
-java:S1989*"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8ˆÑùæ‹2
-]	java:S125)"<This block of commented-out lines of code should be removed.(Ä¶Îœøÿÿÿÿ8ÓÅúæ‹2
+java:S1989/"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8¢»ğØ2
+]	java:S125."<This block of commented-out lines of code should be removed.(Ä¶Îœøÿÿÿÿ8­™ïØ2
 N
-java:S1128"1Remove this unused import 'com.mysql.cj.Session'.(ÃÈ¯–8ˆÑùæ‹2
+java:S1128"1Remove this unused import 'com.mysql.cj.Session'.(ÃÈ¯–8­™ïØ2
 z
-java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¨±ò‡úÿÿÿÿ8ˆÑùæ‹2
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¨±ò‡úÿÿÿÿ8­™ïØ2

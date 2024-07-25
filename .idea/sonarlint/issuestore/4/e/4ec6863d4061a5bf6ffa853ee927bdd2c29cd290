@@ -1,0 +1,19 @@
+
+\
+java:S1118":Add a private constructor to hide the implicit public one.(‹•İ¶üÿÿÿÿ8Ï–ñÕ2
+a
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(“™ö$8Ñ–ñÕ2
+g
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(Üğâƒüÿÿÿÿ8Ñ–ñÕ2
+T
+java:S1172"2Remove these unused method parameters "cc", "bcc".(Äù”Şøÿÿÿÿ8 ¨ïÕ2
+W
+java:S1161":Add the "@Override" annotation above this method signature(‡èú×8¢¨ïÕ2
+F	java:S106-"+Replace this use of System.out by a logger.(‘ã”I8£¨ïÕ2
+T
+java:S11724"2Remove these unused method parameters "cc", "bcc".(éÁ×øÿÿÿÿ8º×äÖ2
+W
+java:S11617":Add the "@Override" annotation above this method signature(‡èú×8½×äÖ2
+L	java:S106L"+Replace this use of System.out by a logger.(î³ù…ùÿÿÿÿ8¾×äÖ2
+;
+java:S1128"Remove this duplicated import.(¬µ²8Ú–ñÕ2

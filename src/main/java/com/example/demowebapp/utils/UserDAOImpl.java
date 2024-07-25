@@ -24,9 +24,10 @@ public class UserDAOImpl implements UserDAO {
                 user.setId(rs.getInt(1));
                 user.setName(rs.getString(2));
                 user.setEmail(rs.getString(3));
-                user.setPassword(EncryptDecryptUtils.decrypt(rs.getString(4)));
-                user.setCreatedTs(rs.getTimestamp(5));
-                user.setUpdatedTs(rs.getTimestamp(6));
+                user.setActive(rs.getString(4).equals("Y"));
+                user.setPassword(rs.getString(5));
+                user.setCreatedTs(rs.getTimestamp(6));
+                user.setUpdatedTs(rs.getTimestamp(7));
                 return user;
             }
         } catch (SQLException e) {
@@ -52,6 +53,23 @@ public class UserDAOImpl implements UserDAO {
         } catch (SQLException e) {
             e.printStackTrace();
             throw new RuntimeException("creation User problem", e);
+        } finally {
+            DBUtils.close(null, null, pstmt, null);
+        }
+    }
+
+    @Override
+    public boolean activate(User user) {
+        PreparedStatement pstmt = null;
+        try (Connection conn = DBUtils.getConnection();) {
+            pstmt = conn.prepareStatement("UPDATE users SET is_active = 'Y', update_ts = CURRENT_TIMESTAMP WHERE users.email = ?");
+
+            pstmt.setString(1, user.getEmail());
+            return pstmt.executeUpdate() == 1;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new RuntimeException("Activation User problem", e);
         } finally {
             DBUtils.close(null, null, pstmt, null);
         }

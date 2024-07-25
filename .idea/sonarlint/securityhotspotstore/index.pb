@@ -55,3 +55,17 @@ g
 7src/main/java/com/example/demowebapp/LogoutServlet.java,9\4\9486711be53e1f54e14408b1b24c5cdf475afde0
 f
 6src/main/java/com/example/demowebapp/LoginServlet.java,b\f\bff3cfe1b82e098856ca4efd3eefb4bf1dfa30e4
+s
+Csrc/main/java/com/example/demowebapp/utils/EncryptDecryptUtils.java,6\6\66843e38287b7d1b8de0b3a91b2706d789d49882
+d
+4src/main/java/com/example/demowebapp/RegServlet.java,c\9\c94cb593ad107a9b347807a38ca701b54c4367ee
+G
+src/main/webapp/reg.jsp,6\c\6c64b8f39d9cc7200dfbd5a883a0a9932d0553b1
+l
+<src/main/java/com/example/demowebapp/utils/SendEmailTLS.java,6\e\6efc74b9c572e2a380c206299a426d3785777c82
+i
+9src/main/java/com/example/demowebapp/utils/MailUtils.java,4\e\4ec6863d4061a5bf6ffa853ee927bdd2c29cd290
+i
+9src/main/java/com/example/demowebapp/ActivateServlet.java,4\b\4b0dc8323a998e8c307032b0052a9e6beba90856
+a
+1src/main/java/com/example/demowebapp/activate.jsp,e\6\e61f66fcddab6c0ba7b136c4a88f8792aceafeab

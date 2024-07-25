@@ -1,8 +1,11 @@
 package com.example.demowebapp;
 
 import com.example.demowebapp.model.User;
+import com.example.demowebapp.utils.EncryptDecryptUtils;
+import com.example.demowebapp.utils.MailUtils;
 import com.example.demowebapp.utils.ServletUtils;
 import com.example.demowebapp.utils.UserDAOImpl;
+import com.mysql.cj.Session;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
@@ -40,7 +43,21 @@ public class RegServlet extends HttpServlet {
                 boolean isCreated = dao.createUser(user);
 
                 if (isCreated) {
-                    ServletUtils.forwardJSP("blog", request, response);
+                    // just created - not active
+                    // send msg with instructios
+
+                    String subject ="Welcome to Crazy User App";
+                    String token = EncryptDecryptUtils.encrypt(user.getEmail());
+                    System.out.println(token);
+                    String msg = String.format("<b> To confirm your account, please <a href='http://localhost:8080/web_app/activate?token=%s'>click</a></b>", token);
+
+
+                    MailUtils.sendHtmlMail(user.getEmail(), subject, msg, null, null);
+
+                    request.setAttribute("msg", "Check your email to confirm registration");
+                    ServletUtils.forwardJSP("reg", request, response);
+               //     ServletUtils.forwardJSP("blog", request, response);
+                    return;
                 } else {
                     request.setAttribute("msg", "Error user registration");
                 }

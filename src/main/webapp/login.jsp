@@ -79,6 +79,7 @@
 
 <h2>Login Form</h2>
 
+<h2 style="color: #c82333">${msg}</h2>
 <form action="login" method="post">
     <div class="imgcontainer">
         <img src="img_avatar2.png" alt="Avatar" class="avatar">

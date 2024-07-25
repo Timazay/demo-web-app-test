@@ -29,6 +29,11 @@ public class LoginServlet extends HttpServlet {
         User user = null;
         if ( (user = userDAO.findUserByEmail(email)) != null){
             if (user.getPassword().equals(pwd)){
+                if (!user.isActive()){
+
+                    request.setAttribute("msg", "You are not activated, check your mail! Or  ");
+                    ServletUtils.forwardJSP("login", request, response);
+                }
                 HttpSession session = request.getSession();
                 session.setMaxInactiveInterval(90);
 

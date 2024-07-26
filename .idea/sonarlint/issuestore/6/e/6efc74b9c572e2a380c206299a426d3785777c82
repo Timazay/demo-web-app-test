@@ -1,2 +1,19 @@
 
 ]	java:S125"<This block of commented-out lines of code should be removed.(³üØŞøÿÿÿÿ8å¼òÖ2
+N
+java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²8’“ƒş2
+Q
+java:S1128"/Remove this unused import 'javax.mail.Message'.(¤©ºóıÿÿÿÿ8’“ƒş2
+W
+java:S1128":Remove this unused import 'javax.mail.MessagingException'.(ÇîŞ8’“ƒş2
+`
+java:S1128">Remove this unused import 'javax.mail.PasswordAuthentication'.(ÎÉ×åùÿÿÿÿ8““ƒş2
+Q
+java:S1128"/Remove this unused import 'javax.mail.Session'.(’”úÿÿÿÿ8““ƒş2
+S
+java:S1128	"1Remove this unused import 'javax.mail.Transport'.(¸½Ú¿üÿÿÿÿ8““ƒş2
+b
+java:S1128
+"@Remove this unused import 'javax.mail.internet.InternetAddress'.(–¹“êûÿÿÿÿ8““ƒş2
+^
+java:S1128"<Remove this unused import 'javax.mail.internet.MimeMessage'.(«ÀÔ€şÿÿÿÿ8““ƒş2

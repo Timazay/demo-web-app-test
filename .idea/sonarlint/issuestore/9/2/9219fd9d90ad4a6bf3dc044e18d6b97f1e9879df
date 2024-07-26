@@ -1,0 +1,10 @@
+
+r	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§í¦Âúÿÿÿÿ8ªêÆÿ2
+
+java:S1488R"bImmediately return this expression instead of assigning it to the temporary variable "triggerNew".(’›‘8«êÆÿ2
+]	java:S125"<This block of commented-out lines of code should be removed.(ò®ù€ùÿÿÿÿ8°êÆÿ2
+L
+java:S1197"*Move the array designators [] to the type.(ùï¾ÿÿÿÿÿ8´êÆÿ2
+G	java:S106"+Replace this use of System.out by a logger.(ïÚ¾«8µêÆÿ2
+]	java:S125*"<This block of commented-out lines of code should be removed.(¯¨Ù÷úÿÿÿÿ8»êÆÿ2
+X	java:S125="<This block of commented-out lines of code should be removed.(Ÿõ˜à8¼êÆÿ2

@@ -69,3 +69,13 @@ i
 9src/main/java/com/example/demowebapp/ActivateServlet.java,4\b\4b0dc8323a998e8c307032b0052a9e6beba90856
 a
 1src/main/java/com/example/demowebapp/activate.jsp,e\6\e61f66fcddab6c0ba7b136c4a88f8792aceafeab
+t
+Dsrc/main/java/com/example/demowebapp/services/XMLCurrencyParser.java,6\3\63e5c5b5b18991d3edb52ad8f1bee9d6207828b2
+q
+Asrc/main/java/com/example/demowebapp/CurrenciesSenderServlet.java,f\d\fd2f5e5b85bb62b746d9caa577d099e8decc1473
+z
+Jsrc/main/java/com/example/demowebapp/services/CurrenciesSenderService.java,1\1\118daa3307ff1f339ac2263a4f0656a3aa06f6cf
+p
+@src/main/java/com/example/demowebapp/quartz/CreateQuartzJob.java,3\a\3ae727054c146606b992a7c4db9ba862796ecda7
+p
+@src/main/java/com/example/demowebapp/quartz/QuartzScheduler.java,9\2\9219fd9d90ad4a6bf3dc044e18d6b97f1e9879df

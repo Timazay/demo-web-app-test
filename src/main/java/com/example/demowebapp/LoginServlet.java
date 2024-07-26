@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
             if (user.getPassword().equals(pwd)){
                 if (!user.isActive()){
 
-                    request.setAttribute("msg", "You are not activated, check your mail! Or  ");
+                    request.setAttribute("msg", "You are not activated, check your mail!");
                     ServletUtils.forwardJSP("login", request, response);
                 }
                 HttpSession session = request.getSession();
@@ -48,8 +48,6 @@ public class LoginServlet extends HttpServlet {
                 return;
             }
         }
-
-
 
     }
 }

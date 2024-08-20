@@ -14,7 +14,7 @@ public class UserDAOImpl implements UserDAO {
     public User findUserByEmail(String email) {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
-        try (Connection conn = DBUtils.getConnection();) {
+        try (Connection conn = DBUtils.getConnection()) {
             pstmt =
                     conn.prepareStatement(String.format(
                             "SELECT * FROM users where email = '%s'", email));
@@ -44,7 +44,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean createUser(User user) {
         PreparedStatement pstmt = null;
-        try (Connection conn = DBUtils.getConnection();) {
+        try (Connection conn = DBUtils.getConnection()) {
             pstmt =
                     conn.prepareStatement(String.format(
                             "INSERT INTO users (name, email, password) VALUES ('%s', '%s', '%s')",
@@ -63,7 +63,7 @@ public class UserDAOImpl implements UserDAO {
     @Override
     public boolean activate(User user) {
         PreparedStatement pstmt = null;
-        try (Connection conn = DBUtils.getConnection();) {
+        try (Connection conn = DBUtils.getConnection()) {
             pstmt = conn.prepareStatement("UPDATE users SET is_active = 'Y', update_ts = CURRENT_TIMESTAMP WHERE users.email = ?");
 
             pstmt.setString(1, user.getEmail());

@@ -1,7 +1,25 @@
 
+g	java:S1120"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8©³2
+g	java:S1126"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8©³2
 
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹¨¯¿8Üºüş2
+java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹¨¯¿8‘©³2
+\
+java:S3416":Update this logger to use "CurrenciesSenderServlet.class".(¡àïÖşÿÿÿÿ8’©³2
+t
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(Ïû©Öûÿÿÿÿ8”©³2
+
+java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(ËÔû‡8˜©³2
+R
+java:S2696)"6Make the enclosing method "static" or remove this set.(Ö¿ÂF8–©³2
+c
+java:S19890"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8—©³2
+c
+java:S19896"AHandle the "RuntimeException" thrown here in a "try/catch" block.(Ò‚Òéüÿÿÿÿ8—©³2
 †
-java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(üéı‰ÿÿÿÿÿ8ËËşş2
+java:S1989="dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(üéı‰ÿÿÿÿÿ8İû³2
+l
+java:S1128"JRemove this unused import 'com.example.demowebapp.quartz.CreateQuartzJob'.(¹ øşÿÿÿÿ8×¯·2
 z
-java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ªâéşÿÿÿÿ8àºüş2
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(ªâéşÿÿÿÿ8˜©³2
+z
+java:S2226"XRemove this misleading mutable servlet instance field or make it "static" and/or "final"(¡àïÖşÿÿÿÿ8˜©³2

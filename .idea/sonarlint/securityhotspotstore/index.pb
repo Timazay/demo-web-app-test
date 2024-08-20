@@ -79,3 +79,9 @@ p
 @src/main/java/com/example/demowebapp/quartz/CreateQuartzJob.java,3\a\3ae727054c146606b992a7c4db9ba862796ecda7
 p
 @src/main/java/com/example/demowebapp/quartz/QuartzScheduler.java,9\2\9219fd9d90ad4a6bf3dc044e18d6b97f1e9879df
+g
+7src/main/java/com/example/demowebapp/dao/OfficeDao.java,3\5\35ef877925b75be4519af06f0d8376ce2fe0fc2c
+f
+6src/main/java/com/example/demowebapp/model/Office.java,6\b\6b783263a68c76ce76118189af7dbc7f20a84966
+Q
+!src/main/webapp/offices-table.jsp,6\3\63c0e522763b577f5d16d6fa5bb0ad67850cf343

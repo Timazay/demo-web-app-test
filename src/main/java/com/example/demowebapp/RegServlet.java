@@ -49,7 +49,8 @@ public class RegServlet extends HttpServlet {
                     String subject ="Welcome to Crazy User App";
                     String token = EncryptDecryptUtils.encrypt(user.getEmail());
                     System.out.println(token);
-                    String msg = String.format("<b> To confirm your account, please <a href='http://localhost:8080/web_app/activate?token=%s'>click</a></b>", token);
+                    String msg = String.format("<b> To confirm your account, " +
+                            "please <a href='http://localhost:8080/web_app/activate?token=%s'>click</a></b>", token);
 
 
                     MailUtils.sendHtmlMail(user.getEmail(), subject, msg, null, null);

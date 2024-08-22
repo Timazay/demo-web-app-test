@@ -4,8 +4,7 @@ import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
 import com.example.demowebapp.utils.MailUtils;
 import com.example.demowebapp.utils.ServletUtils;
-import com.example.demowebapp.utils.UserDAOImpl;
-import com.mysql.cj.Session;
+import com.example.demowebapp.dao.UserDAOImpl;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
@@ -13,7 +12,6 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.Date;
 
 @WebServlet(name = "RegServlet", value = "/reg")

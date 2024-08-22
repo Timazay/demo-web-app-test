@@ -1,6 +1,8 @@
-package com.example.demowebapp.utils;
+package com.example.demowebapp.dao;
 
 import com.example.demowebapp.model.User;
+import com.example.demowebapp.utils.DBUtils;
+import com.example.demowebapp.utils.EncryptDecryptUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +12,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UserDAOImpl implements UserDAO {
+    private final RoleDao roleDao= new RoleDaoImpl();
     @Override
     public User findUserByEmail(String email) {
         PreparedStatement pstmt = null;
@@ -28,8 +31,10 @@ public class UserDAOImpl implements UserDAO {
                 user.setEmail(rs.getString(3));
                 user.setActive(rs.getString(4).equals("Y"));
                 user.setPassword(rs.getString(5));
-                user.setCreatedTs(rs.getTimestamp(6));
-                user.setUpdatedTs(rs.getTimestamp(7));
+                int roleId = rs.getInt(6);
+                user.setRole(roleDao.findRoleById(roleId));
+                user.setCreatedTs(rs.getTimestamp(7));
+                user.setUpdatedTs(rs.getTimestamp(8));
                 return user;
             }
         } catch (SQLException e) {
@@ -47,7 +52,7 @@ public class UserDAOImpl implements UserDAO {
         try (Connection conn = DBUtils.getConnection()) {
             pstmt =
                     conn.prepareStatement(String.format(
-                            "INSERT INTO users (name, email, password) VALUES ('%s', '%s', '%s')",
+                            "INSERT INTO users (name, email, password, role) VALUES ('%s', '%s', '%s', 3)",
                             user.getName(), user.getEmail(), EncryptDecryptUtils.encrypt(user.getPassword())));
 
             return pstmt.executeUpdate() == 1;
@@ -96,8 +101,10 @@ public class UserDAOImpl implements UserDAO {
                 user.setEmail(rs.getString(3));
                 user.setActive(rs.getString(4).equals("Y"));
                 user.setPassword(rs.getString(5));
-                user.setCreatedTs(rs.getTimestamp(6));
-                user.setUpdatedTs(rs.getTimestamp(7));
+                int roleId = rs.getInt(6);
+                user.setRole(roleDao.findRoleById(roleId));
+                user.setCreatedTs(rs.getTimestamp(7));
+                user.setUpdatedTs(rs.getTimestamp(8));
                 users.add(user);
             }
         } catch (SQLException e) {

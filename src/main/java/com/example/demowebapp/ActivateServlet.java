@@ -3,7 +3,7 @@ package com.example.demowebapp;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
 import com.example.demowebapp.utils.ServletUtils;
-import com.example.demowebapp.utils.UserDAOImpl;
+import com.example.demowebapp.dao.UserDAOImpl;
 
 import javax.servlet.*;
 import javax.servlet.http.*;

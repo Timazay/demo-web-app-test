@@ -89,10 +89,9 @@ public class EncryptDecryptUtils {
 
         EncryptDecryptUtils cryptUtils = new EncryptDecryptUtils();
 
-        String encrPass = cryptUtils.encrypt("321");
-        System.out.println(encrPass);
+        String d = cryptUtils.decrypt("nF6ZNnF18QR2RIOd2cHaag==");
+        System.out.println(d);
 
-        System.out.println(cryptUtils.decrypt(encrPass));
 
     }
 }

@@ -1,6 +1,6 @@
 package com.example.demowebapp.quartz;
 import com.example.demowebapp.services.CurrenciesSenderService;
-import com.example.demowebapp.utils.UserDAOImpl;
+import com.example.demowebapp.dao.UserDAOImpl;
 import org.apache.log4j.Logger;
 import org.quartz.Job;
 import org.quartz.JobExecutionContext;

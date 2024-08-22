@@ -1,10 +1,9 @@
 package com.example.demowebapp;
 
-import com.example.demowebapp.quartz.CreateQuartzJob;
 import com.example.demowebapp.quartz.QuartzScheduler;
 import com.example.demowebapp.services.CurrenciesSenderService;
 import com.example.demowebapp.utils.ServletUtils;
-import com.example.demowebapp.utils.UserDAOImpl;
+import com.example.demowebapp.dao.UserDAOImpl;
 import org.apache.log4j.Logger;
 import org.quartz.SchedulerException;
 

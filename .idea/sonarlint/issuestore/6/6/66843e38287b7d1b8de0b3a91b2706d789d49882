@@ -1,33 +1,30 @@
 
 a
-java:S2147 "DCombine this catch with the one at line 30, which has the same body.(Ë‡…¨8ºîóÚ2
+java:S2147 "DCombine this catch with the one at line 30, which has the same body.(Ë‡…¨8ŒìÙ—2
 `
-java:S2147""DCombine this catch with the one at line 32, which has the same body.(ÿÒ„p8ºîóÚ2
+java:S2147""DCombine this catch with the one at line 32, which has the same body.(ÿÒ„p8ŒìÙ—2
 V
-java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ıªØ8¿îóÚ2
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(ıªØ8ìÙ—2
 X
-java:S6437"6Revoke and change this password, as it is compromised.(éÜŸışÿÿÿÿ8ÁîóÚ2
+java:S6437"6Revoke and change this password, as it is compromised.(éÜŸışÿÿÿÿ8ìÙ—2
 [
-java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(éÜŸışÿÿÿÿ8ÁîóÚ2
+java:S4719"9Replace charset name argument with StandardCharsets.UTF_8(éÜŸışÿÿÿÿ8ìÙ—2
 M
-java:S5542"+Use another cipher mode or disable padding.(³Úùšúÿÿÿÿ8ÃîóÚ2
+java:S5542"+Use another cipher mode or disable padding.(³Úùšúÿÿÿÿ8ìÙ—2
 ™
-java:S1130W"|Remove the declaration of thrown exception 'javax.crypto.NoSuchPaddingException', as it cannot be thrown from method's body.(ø‚¹8ĞîóÚ2
+java:S1130W"|Remove the declaration of thrown exception 'javax.crypto.NoSuchPaddingException', as it cannot be thrown from method's body.(ø‚¹8—ìÙ—2
 š
-java:S1130W"}Remove the declaration of thrown exception 'java.io.UnsupportedEncodingException', as it cannot be thrown from method's body.(ø‚¹8ĞîóÚ2
+java:S1130W"}Remove the declaration of thrown exception 'java.io.UnsupportedEncodingException', as it cannot be thrown from method's body.(ø‚¹8—ìÙ—2
 œ
-java:S1130W"Remove the declaration of thrown exception 'java.security.NoSuchAlgorithmException', as it cannot be thrown from method's body.(ø‚¹8ÑîóÚ2
+java:S1130W"Remove the declaration of thrown exception 'java.security.NoSuchAlgorithmException', as it cannot be thrown from method's body.(ø‚¹8—ìÙ—2
 ¡
-java:S1130X"Remove the declaration of thrown exception 'javax.crypto.IllegalBlockSizeException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8ÑîóÚ2
+java:S1130X"Remove the declaration of thrown exception 'javax.crypto.IllegalBlockSizeException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8—ìÙ—2
 ›
-java:S1130X"yRemove the declaration of thrown exception 'javax.crypto.BadPaddingException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8ÑîóÚ2
+java:S1130X"yRemove the declaration of thrown exception 'javax.crypto.BadPaddingException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8—ìÙ—2
 ¬
-java:S1130X"‰Remove the declaration of thrown exception 'java.security.InvalidAlgorithmParameterException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8ÑîóÚ2
+java:S1130X"‰Remove the declaration of thrown exception 'java.security.InvalidAlgorithmParameterException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8—ìÙ—2
 œ
-java:S1130X"zRemove the declaration of thrown exception 'java.security.InvalidKeyException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8ÑîóÚ2
-Q
-java:S2209\"5Change this instance-reference to a static reference.(‘Ñåu8ÔîóÚ2
-L	java:S106]"+Replace this use of System.out by a logger.(²¤ïÎıÿÿÿÿ8ÕîóÚ2
-L	java:S106_"+Replace this use of System.out by a logger.(éê­¥ùÿÿÿÿ8ÕîóÚ2
+java:S1130X"zRemove the declaration of thrown exception 'java.security.InvalidKeyException', as it cannot be thrown from method's body.(­ÊÏ¹ûÿÿÿÿ8—ìÙ—2
 W
-java:S2209_"5Change this instance-reference to a static reference.(éê­¥ùÿÿÿÿ8ÕîóÚ2
+java:S2209\"5Change this instance-reference to a static reference.(µ®ìÁøÿÿÿÿ8˜ìÙ—2
+G	java:S106]"+Replace this use of System.out by a logger.(¯ô¢ô8˜ìÙ—2

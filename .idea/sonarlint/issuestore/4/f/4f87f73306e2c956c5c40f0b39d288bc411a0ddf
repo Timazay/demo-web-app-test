@@ -1,0 +1,17 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚“¶î8ˆö¸Ú—2
+a
+java:S1854"?Remove this useless assignment to local variable "generalUser".(—Œé¾ùÿÿÿÿ8Šö¸Ú—2
+\
+java:S1161":Add the "@Override" annotation above this method signature(õ­¥Ûşÿÿÿÿ8Šö¸Ú—2
+a
+java:S4143"DVerify this is the key that was intended; it was already set before.(’ÒªÑ8“ë¹Ú—2
+R
+java:S1481"0Remove this unused "generalUser" local variable.(—Œé¾ùÿÿÿÿ8Œö¸Ú—2
+W
+java:S1161":Add the "@Override" annotation above this method signature(‚“¶î8Œö¸Ú—2
+L	java:S106!"+Replace this use of System.out by a logger.(ŠñãËøÿÿÿÿ8ö¸Ú—2
+G	java:S106$"+Replace this use of System.out by a logger.(Ş×ß–8ö¸Ú—2
+Z
+java:S2254%"=Remove use of this unsecured "getRequestedSessionId()" method(¶¨øĞ8ö¸Ú—2

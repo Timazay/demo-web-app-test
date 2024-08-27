@@ -31,8 +31,6 @@ N
 src/main/webapp/cars-table.jsp,c\8\c8713796c418d35f9c288ef5ef98fc409ccecf84
 N
 src/main/webapp/currencies.jsp,2\3\23c9be15e7399bbfa42b4b032809a3f708a3d234
-g
-7src/main/java/com/example/demowebapp/utils/UserDAO.java,b\1\b1b538823eeef069e65f1654e8b67fd6823567e9
 d
 4src/main/java/com/example/demowebapp/model/User.java,5\9\59aa6bcc6aff7adf69134c4367a92ca1ef219006
 J
@@ -43,8 +41,6 @@ I
 src/main/webapp/login.jsp,8\5\85ee523d01e5e19376db640e846c91bbcb0a1c22
 g
 7src/main/java/com/example/demowebapp/utils/DBUtils.java,7\f\7fee8114f9f6895c6171380a4a6e40a1f0db44c7
-k
-;src/main/java/com/example/demowebapp/utils/UserDAOImpl.java,a\0\a0c7996adec0c1b0a73fdbc72353cfbb123ca6d4
 I
 src/main/webapp/blog.html,5\6\5652b6385831ae77b18111df15d38af23e6133b1
 H
@@ -85,3 +81,9 @@ f
 6src/main/java/com/example/demowebapp/model/Office.java,6\b\6b783263a68c76ce76118189af7dbc7f20a84966
 Q
 !src/main/webapp/offices-table.jsp,6\3\63c0e522763b577f5d16d6fa5bb0ad67850cf343
+n
+>src/main/java/com/example/demowebapp/filters/LoggerFilter.java,4\f\4f87f73306e2c956c5c40f0b39d288bc411a0ddf
+M
+src/main/webapp/basic-msg.jsp,2\d\2d6eadef1a397e91116e3321b4596b4c68b4a811
+l
+<src/main/java/com/example/demowebapp/filters/AuthFilter.java,2\7\27b77277c493f358b2f11368f5483aeac5040bcf

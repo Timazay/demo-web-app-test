@@ -9,24 +9,22 @@ import javax.servlet.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @WebFilter(filterName = "AuthFilter", urlPatterns = {"/*"})
 public class AuthFilter implements Filter {
-    private Map<Role, List<String>> authMap;
+    private Map<Role, List<String>> authMap = new HashMap<>();
 
-    private List<String> whiteList;
+    private List<String> whiteList = new ArrayList<>();
 
     public void init(FilterConfig config) throws ServletException {
         Role admin = new Role(1, "ADMIN", null);
         Role manager = new Role(2, "MANAGER", null);
         Role generalUser = new Role(3, "GENERAL_USER", null);
 
-        authMap.put(admin, Arrays.asList("show-cars", "class", "blog"));
-        authMap.put(manager, Arrays.asList("class", "blog"));
-        authMap.put(generalUser, Arrays.asList("blog"));
+        authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
+        authMap.put(manager, Arrays.asList("/hello-servlet", "/blog"));
+        authMap.put(generalUser, Arrays.asList("/blog"));
 
         whiteList = Arrays.asList("/login", "/reg", "/basic-msg");
 
@@ -57,11 +55,9 @@ public class AuthFilter implements Filter {
                 chain.doFilter(request, response);
             } else {
                 System.out.println(path + " access denied for role: " + user.getRole().getName());
-                httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN, "Access Denied");
             }
         } else {
             System.out.println("User is not authenticated or role not found.");
-            httpResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
         }
     }
 }

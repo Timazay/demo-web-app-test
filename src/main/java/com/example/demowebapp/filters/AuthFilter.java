@@ -7,6 +7,7 @@ import com.example.demowebapp.utils.ServletUtils;
 import javax.servlet.*;
 import javax.servlet.annotation.*;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -23,9 +24,9 @@ public class AuthFilter implements Filter {
         Role manager = new Role(2, "MANAGER", null);
         Role generalUser = new Role(3, "GENERAL_USER", null);
 
-        authMap.put(admin, Arrays.asList("/show-cars", "/blog"));
-        authMap.put(manager, Arrays.asList("/show-cars"));
-        authMap.put(admin, Arrays.asList("/blog"));
+        authMap.put(admin, Arrays.asList("show-cars", "class", "blog"));
+        authMap.put(manager, Arrays.asList("class", "blog"));
+        authMap.put(generalUser, Arrays.asList("blog"));
 
         whiteList = Arrays.asList("/login", "/reg", "/basic-msg");
 
@@ -38,8 +39,10 @@ public class AuthFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws ServletException, IOException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
+        HttpServletResponse httpResponse = (HttpServletResponse) response;
         String path = httpRequest.getServletPath();
         User user = ServletUtils.getUserInSession(httpRequest);
+
         if (whiteList.contains(path)) {
             System.out.println(path + " in white List");
             chain.doFilter(request, response);
@@ -47,9 +50,18 @@ public class AuthFilter implements Filter {
         } else {
             System.out.println(path + " not in white list");
         }
-        if (httpRequest.getSession() != null && authMap.containsKey(user.getRole().getId())
-                && authMap.containsValue(user.getRole())){
-            
+        if (user != null && authMap.containsKey(user.getRole())) {
+            List<String> allowedPaths = authMap.get(user.getRole());
+            if (allowedPaths.contains(path)) {
+                System.out.println(path + " access granted for role: " + user.getRole().getName());
+                chain.doFilter(request, response);
+            } else {
+                System.out.println(path + " access denied for role: " + user.getRole().getName());
+                httpResponse.sendError(HttpServletResponse.SC_FORBIDDEN, "Access Denied");
+            }
+        } else {
+            System.out.println("User is not authenticated or role not found.");
+            httpResponse.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized");
         }
     }
 }

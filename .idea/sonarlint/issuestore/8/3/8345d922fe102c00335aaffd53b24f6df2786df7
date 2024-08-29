@@ -1,0 +1,25 @@
+
+ƒ
+java:S1192'"hDefine a constant instead of duplicating this literal "Initial SessionFactory creation failed." 3 times.(Ô˜Òòıÿÿÿÿ
+
+java:S1488!"fImmediately return this expression instead of assigning it to the temporary variable "sessionFactory".(Ü¸ øÿÿÿÿ
+
+java:S14886"fImmediately return this expression instead of assigning it to the temporary variable "sessionFactory".(Ü¸ øÿÿÿÿ
+
+java:S1488W"fImmediately return this expression instead of assigning it to the temporary variable "sessionFactory".(Ü¸ øÿÿÿÿ
+U
+java:S1118":Add a private constructor to hide the implicit public one.(‡Œïøşÿÿÿÿ
+@
+java:S1181%"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ç°¯À
+@	java:S106"+Replace this use of System.out by a logger.(ò»“ø
+E	java:S106'"+Replace this use of System.err by a logger.(Ô˜Òòıÿÿÿÿ
+@
+java:S1181:"%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+E	java:S1061"+Replace this use of System.out by a logger.(¬Áƒñûÿÿÿÿ
+E	java:S1064"+Replace this use of System.out by a logger.(Ò¤ÁÎşÿÿÿÿ
+E	java:S106<"+Replace this use of System.err by a logger.(Ô˜Òòıÿÿÿÿ
+@
+java:S1181["%Catch Exception instead of Throwable.(º¹áôÿÿÿÿÿ
+E	java:S106U"+Replace this use of System.out by a logger.(ˆ†ÓÏşÿÿÿÿ
+E	java:S106\"+Replace this use of System.err by a logger.(Ô˜Òòıÿÿÿÿ

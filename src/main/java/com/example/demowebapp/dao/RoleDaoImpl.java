@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RoleDaoImpl implements RoleDao {
+/*public class RoleDaoImpl implements RoleDao {
     @Override
     public Role findRoleById(int id) {
         PreparedStatement pstmt = null;
@@ -52,4 +52,4 @@ public class RoleDaoImpl implements RoleDao {
         }
         return role;
     }
-}
+}*/

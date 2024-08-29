@@ -1,5 +1,6 @@
 package com.example.demowebapp;
 
+import com.example.demowebapp.model.Role;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
 import com.example.demowebapp.utils.MailUtils;

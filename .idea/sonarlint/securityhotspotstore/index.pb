@@ -87,3 +87,33 @@ M
 src/main/webapp/basic-msg.jsp,2\d\2d6eadef1a397e91116e3321b4596b4c68b4a811
 l
 <src/main/java/com/example/demowebapp/filters/AuthFilter.java,2\7\27b77277c493f358b2f11368f5483aeac5040bcf
+m
+=src/main/java/com/example/demowebapp/utils/HibernateUtil.java,8\3\8345d922fe102c00335aaffd53b24f6df2786df7
+O
+src/main/webapp/js/bootstrap.js,d\4\d4e6b9e1c4f8590713363191b14777838a5253be
+e
+5src/main/java/com/example/demowebapp/entity/Item.java,1\2\127cdb8a1344056bad116ee3f41482fd3da6d873
+i
+9src/main/java/com/example/demowebapp/dao/RoleDaoImpl.java,d\7\d76cca3f158c341f623b6874739c2da4070c05cf
+e
+5src/main/java/com/example/demowebapp/dao/UserDAO.java,5\2\521834d87b2f0881152190c3cecdd3ca02d9376f
+d
+4src/main/java/com/example/demowebapp/model/Role.java,3\7\37ef610a7a5aca1d82f10369169184ef27542a53
+i
+9src/main/java/com/example/demowebapp/dao/UserDAOImpl.java,a\6\a6b8f8a254937b05cc6cf416ad570012ac20efe6
+i
+9src/main/java/com/example/demowebapp/entity/Employee.java,b\f\bfaaac61f6e0d73b1ed16b576522e7d7cf62ace6
+
+Osrc/main/java/com/example/demowebapp/test/HibernateOneToManyAnnotationMain.java,f\8\f8e2916d7c96ee4c720868d5f2156f744c242eb3
+n
+>src/main/java/com/example/demowebapp/dao/impl/EmployeeDao.java,f\0\f0ef18fd11ac0fd7985288b431c6f21b34bfdaf5
+i
+9src/main/java/com/example/demowebapp/dao/AbstractDao.java,3\8\380d7ad64bdab436ee463579868c56ce3881ea64
+l
+<src/main/java/com/example/demowebapp/test/HibernateMain.java,a\6\a62b74c55ec2ef879c8f4750d03b2f200d0eac68
+e
+5src/main/java/com/example/demowebapp/entity/Cart.java,a\4\a461699e56a5e0d4add290601b191a8f1be2be8a
+w
+Gsrc/main/java/com/example/demowebapp/utils/HibernateAnnotationUtil.java,8\f\8ff4c38fd4e702399d4bec2caaa9d038b33ba9d4
+w
+Gsrc/main/java/com/example/demowebapp/test/HibernateUserAndRoleTest.java,d\1\d17e837390cebbf39136c7f48f22cbc57fdcd860

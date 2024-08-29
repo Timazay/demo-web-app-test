@@ -1,0 +1,23 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(±¿Ğ†üÿÿÿÿ8™÷ ú™2
+]
+java:S1128"@Remove this unused import 'com.example.demowebapp.model.Office'.(òè8š÷ ú™2
+[
+java:S1128">Remove this unused import 'com.example.demowebapp.model.Role'.(Š¼üš8›÷ ú™2
+`
+java:S1128">Remove this unused import 'com.example.demowebapp.model.User'.(Éª¦æúÿÿÿÿ8›÷ ú™2
+c
+java:S1128"ARemove this unused import 'com.example.demowebapp.utils.DBUtils'.(ÀõéÜûÿÿÿÿ8›÷ ú™2
+M
+java:S1128"0Remove this unused import 'java.sql.Connection'.(¥ËôÖ8›÷ ú™2
+Y
+java:S1128	"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ8›÷ ú™2
+K
+java:S1128
+"/Remove this unused import 'java.sql.ResultSet'.(ˆóÚw8›÷ ú™2
+O
+java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8›÷ ú™2
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8œ÷ ú™2
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8œ÷ ú™2

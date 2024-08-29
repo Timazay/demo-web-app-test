@@ -1,20 +1,16 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(€ûğ§şÿÿÿÿ8ĞÓŠ×2
+L	java:S106"+Replace this use of System.out by a logger.(€ûğ§şÿÿÿÿ8ĞÓŠ×2
 
-java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(€ÿÎÜ8ÑÓŠ×2
+java:S1989"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(€ÿÎÜ8ÑÓŠ×2
 8
 java:S3626<"Remove this redundant jump.(ûÁİ…8ÒÓŠ×2
 8
 java:S3626I"Remove this redundant jump.(ûÁİ…8ÒÓŠ×2
 8
 java:S3626N"Remove this redundant jump.(ûÁİ…8Áí—×2
-G	java:S1063"+Replace this use of System.out by a logger.(ñšÔ8ÔÓŠ×2
+G	java:S1062"+Replace this use of System.out by a logger.(ñšÔ8ÔÓŠ×2
 X	java:S125;"<This block of commented-out lines of code should be removed.(ë’¦8•€•×2
 
 java:S1989H"dHandle the following exceptions that could be thrown by "forwardJSP": ServletException, IOException.(€ÿÎÜ8ÕÓŠ×2
 r
 java:S1989M"PHandle the following exception that could be thrown by "getWriter": IOException.(¤ç†Èûÿÿÿÿ8ÕÓŠ×2
-N
-java:S1128"1Remove this unused import 'com.mysql.cj.Session'.(ÃÈ¯–8®Ç—×2
-O
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8®Ç—×2

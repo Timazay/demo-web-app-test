@@ -18,13 +18,13 @@ public class AuthFilter implements Filter {
     private List<String> whiteList = new ArrayList<>();
 
     public void init(FilterConfig config) throws ServletException {
-        Role admin = new Role(1, "ADMIN", null);
+     /*   Role admin = new Role(1, "ADMIN", null);
         Role manager = new Role(2, "MANAGER", null);
-        Role generalUser = new Role(3, "GENERAL_USER", null);
+        Role generalUser = new Role(3, "GENERAL_USER", null);*/
 
-        authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
+        /*authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
         authMap.put(manager, Arrays.asList("/hello-servlet", "/blog"));
-        authMap.put(generalUser, Arrays.asList("/blog"));
+        authMap.put(generalUser, Arrays.asList("/blog"));*/
 
         whiteList = Arrays.asList("/login", "/reg", "/basic-msg");
 

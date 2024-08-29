@@ -1,5 +1,6 @@
 package com.example.demowebapp.dao;
 
+import com.example.demowebapp.model.Role;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.DBUtils;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
@@ -12,7 +13,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class UserDAOImpl implements UserDAO {
-    private final RoleDao roleDao= new RoleDaoImpl();
+  //  private final RoleDao roleDao= new RoleDaoImpl();
     @Override
     public User findUserByEmail(String email) {
         PreparedStatement pstmt = null;
@@ -32,7 +33,7 @@ public class UserDAOImpl implements UserDAO {
                 user.setActive(rs.getString(4).equals("Y"));
                 user.setPassword(rs.getString(5));
                 int roleId = rs.getInt(6);
-                user.setRole(roleDao.findRoleById(roleId));
+        //        user.setRole(roleDao.findRoleById(roleId));
                 user.setCreatedTs(rs.getTimestamp(7));
                 user.setUpdatedTs(rs.getTimestamp(8));
                 return user;
@@ -102,7 +103,7 @@ public class UserDAOImpl implements UserDAO {
                 user.setActive(rs.getString(4).equals("Y"));
                 user.setPassword(rs.getString(5));
                 int roleId = rs.getInt(6);
-                user.setRole(roleDao.findRoleById(roleId));
+       //         user.setRole(roleDao.findRoleById(roleId));
                 user.setCreatedTs(rs.getTimestamp(7));
                 user.setUpdatedTs(rs.getTimestamp(8));
                 users.add(user);

@@ -1,7 +1,9 @@
 
 N
-java:S1874",Remove this use of "save"; it is deprecated.(õðµÉüÿÿÿÿ8Ïð“û™2
-G	java:S106"+Replace this use of System.out by a logger.(ê×¼©8Ïð“û™2
+java:S1874",Remove this use of "save"; it is deprecated.(©Ë‰éúÿÿÿÿ8³ÂíÄ›2
+N
+java:S1874 ",Remove this use of "save"; it is deprecated.(õðµÉüÿÿÿÿ8Ïð“û™2
+G	java:S106!"+Replace this use of System.out by a logger.(ê×¼©8Ïð“û™2
 K
 java:S1128
 "/Remove this unused import 'java.sql.Timestamp'.(èò½+8Ð˜•û™2

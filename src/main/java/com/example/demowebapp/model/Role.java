@@ -1,5 +1,6 @@
 package com.example.demowebapp.model;
 
+import com.example.demowebapp.entity.Employee;
 import lombok.*;
 
 import jakarta.persistence.*;
@@ -24,5 +25,4 @@ public class Role {
     private String description;
     @OneToMany(mappedBy = "role")
     private Set<User> users;
-
 }

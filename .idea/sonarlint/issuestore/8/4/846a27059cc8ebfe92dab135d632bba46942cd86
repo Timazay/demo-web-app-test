@@ -1,0 +1,24 @@
+
+v
+java:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(Úİ‚à8¶ÈÅÈ›2
+s
+java:S3077""WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(®ê¸#8ÄÈÅÈ›2
+X	java:S1252"<This block of commented-out lines of code should be removed.(“’ìí8°ÜÆÈ›2
+u
+java:S1602M"SRemove useless curly braces around statement and then remove useless return keyword(“¦ñÈûÿÿÿÿ8ÉÈÅÈ›2
+N
+java:S1602S",Remove useless curly braces around statement(ßñåØøÿÿÿÿ8ËÈÅÈ›2
+Q
+java:S1874T"4Remove this use of "saveOrUpdate"; it is deprecated.(Ç€8ËÈÅÈ›2
+N
+java:S1602Y",Remove useless curly braces around statement(ßñåØøÿÿÿÿ8ÌÈÅÈ›2
+p
+java:S1602_"SRemove useless curly braces around statement and then remove useless return keyword(ñø©ù8ÍÈÅÈ›2
+N
+java:S1602o",Remove useless curly braces around statement(ßñåØøÿÿÿÿ8ÎÈÅÈ›2
+u
+java:S1602u"SRemove useless curly braces around statement and then remove useless return keyword(“¦ñÈûÿÿÿÿ8ÏÈÅÈ›2
+u
+java:S1602|"SRemove useless curly braces around statement and then remove useless return keyword(“¦ñÈûÿÿÿÿ8ÏÈÅÈ›2
+^
+java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8ºÜÆÈ›2

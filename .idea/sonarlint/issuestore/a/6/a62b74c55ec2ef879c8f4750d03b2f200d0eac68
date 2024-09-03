@@ -1,18 +1,8 @@
 
-L	java:S106"+Replace this use of System.out by a logger.(¨¶ÑÍþÿÿÿÿ8”œïú™2
-W	java:S125"<This block of commented-out lines of code should be removed.(¬’´k8”œïú™2
-X	java:S125"<This block of commented-out lines of code should be removed.(¾á¶8”œïú™2
-]	java:S125""<This block of commented-out lines of code should be removed.(»˜ëçüÿÿÿÿ8•œïú™2
-O
-java:S1128"2Remove this unused import 'java.sql.SQLException'.(ÛïÆŸ8á½Žû™2
-H
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü8á½Žû™2
-m
-java:S1128"QRemove this unused import 'com.example.demowebapp.utils.HibernateAnnotationUtil'.(Ûü±8á½Žû™2
-i
-java:S1128	"GRemove this unused import 'com.example.demowebapp.utils.HibernateUtil'.(“ÛÉ‡þÿÿÿÿ8á½Žû™2
-T
-java:S1128
-"2Remove this unused import 'org.hibernate.Session'.(È¹›§ùÿÿÿÿ8á½Žû™2
-S
-java:S1128"6Remove this unused import 'org.hibernate.Transaction'.(ìÌè³8á½Žû™2
+W
+java:S1118":Add a private constructor to hide the implicit public one.(Íß¶Ô8Ø‘‚Ç›2
+]	java:S125"<This block of commented-out lines of code should be removed.(õ–ôÄùÿÿÿÿ8Ú‘‚Ç›2
+X	java:S125"<This block of commented-out lines of code should be removed.(¼¥Ú­8”œïú™2
+X	java:S125"<This block of commented-out lines of code should be removed.(êÌ8”œïú™2
+]	java:S125 "<This block of commented-out lines of code should be removed.(»˜ëçüÿÿÿÿ8•œïú™2
+X	java:S1251"<This block of commented-out lines of code should be removed.(‡Í·ä8Ú‘‚Ç›2

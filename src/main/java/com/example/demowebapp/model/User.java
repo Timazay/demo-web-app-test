@@ -16,16 +16,16 @@ import java.sql.Timestamp;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", unique = true, nullable = false)
+    @Column(name = "id_user", unique = true, nullable = false)
     private int id;
-    @Column(name = "name", length = 128)
+    @Column(name = "name", length = 128, nullable = false)
     private String name;
     @Column(name = "email", length = 128, nullable = false)
     private String email;
     @Column(name = "password", length = 128, nullable = false)
     private String password;
     @ManyToOne
-    @JoinColumn(name = "id", nullable = false)
+    @JoinColumn(name = "id_role")
     private Role role;
     @Column(name = "is_active", length = 1)
     private boolean isActive;

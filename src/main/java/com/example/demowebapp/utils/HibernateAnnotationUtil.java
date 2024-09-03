@@ -6,10 +6,12 @@ import com.example.demowebapp.entity.Item;
 import com.example.demowebapp.model.Role;
 import com.example.demowebapp.model.User;
 import org.hibernate.SessionFactory;
+
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Environment;
+
 import org.hibernate.service.ServiceRegistry;
 
 import java.util.HashMap;

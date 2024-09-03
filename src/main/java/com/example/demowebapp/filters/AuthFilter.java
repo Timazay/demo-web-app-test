@@ -1,5 +1,6 @@
 package com.example.demowebapp.filters;
 
+import com.example.demowebapp.dao.impl.RoleDao;
 import com.example.demowebapp.model.Role;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.ServletUtils;
@@ -16,15 +17,16 @@ public class AuthFilter implements Filter {
     private Map<Role, List<String>> authMap = new HashMap<>();
 
     private List<String> whiteList = new ArrayList<>();
+    private RoleDao dao = new RoleDao();
 
     public void init(FilterConfig config) throws ServletException {
-     /*   Role admin = new Role(1, "ADMIN", null);
-        Role manager = new Role(2, "MANAGER", null);
-        Role generalUser = new Role(3, "GENERAL_USER", null);*/
+        Role admin = dao.getByKey(1);
+        Role manager = dao.getByKey(2);
+        Role generalUser = dao.getByKey(3);
 
-        /*authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
+        authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
         authMap.put(manager, Arrays.asList("/hello-servlet", "/blog"));
-        authMap.put(generalUser, Arrays.asList("/blog"));*/
+        authMap.put(generalUser, Arrays.asList("/blog"));
 
         whiteList = Arrays.asList("/login", "/reg", "/basic-msg");
 

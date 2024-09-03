@@ -14,8 +14,6 @@ public class HibernateMain {
     static EmployeeDao dao = new EmployeeDao();
 
     public static void main(String[] args) {
-        Employee e = dao.getByKey(25);
-        System.out.println(e);
 
         /*Employee emp = new Employee();
         emp.setName("Pankaj");
@@ -48,5 +46,8 @@ public class HibernateMain {
 
         }
         */
+        EmployeeDao employeeDao = new EmployeeDao();
+        Employee employee = employeeDao.getByKey(2);
+        employeeDao.delete(employee);
     }
 }

@@ -1,8 +1,8 @@
 package com.example.demowebapp.model;
 
-import com.example.demowebapp.entity.Item;
-import jakarta.persistence.*;
 import lombok.*;
+
+import jakarta.persistence.*;
 
 import java.util.Set;
 
@@ -16,7 +16,7 @@ import java.util.Set;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", unique = true, nullable = false)
+    @Column(name = "id_role", unique = true, nullable = false)
     private int id;
     @Column(name = "name", nullable = false)
     private String name;

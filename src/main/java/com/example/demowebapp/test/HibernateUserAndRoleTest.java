@@ -14,12 +14,13 @@ import java.util.Set;
 public class HibernateUserAndRoleTest {
     public static void main(String[] args) {
         Session session = null;
-
-        try (SessionFactory sessionFactory = HibernateAnnotationUtil.getSessionFactory()) {
-            session = sessionFactory.getCurrentSession();
+        SessionFactory sessionFactory = HibernateAnnotationUtil.getSessionFactory();
+        session = sessionFactory.getCurrentSession();
+        try {
             Transaction txn = session.beginTransaction();
 
-            Role role = session.get(Role.class, 1);
+            Role role = new Role();
+            role.setName("ADMIN");
             User user = new User();
             user.setName("Tim");
             user.setEmail("ooo");
@@ -27,9 +28,12 @@ public class HibernateUserAndRoleTest {
             user.setPassword("123");
             user.setRole(role);
 
+            session.save(role);
             session.save(user);
             System.out.println(user.toString());
             txn.commit();
+        } finally {
+            session.close();
         }
 
 

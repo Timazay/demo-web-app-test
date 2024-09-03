@@ -43,17 +43,51 @@ public abstract class AbstractDao<PK extends Serializable, T> {
 
 
     public void persist(T entity) {
-        getSession().persist(entity);
+        Transaction txn = null;
+        try (Session session = getSession()){
+            txn = session.beginTransaction();
+            session.persist(entity);
+        } catch (Exception e) {
+            if (txn != null) {
+                e.printStackTrace();
+                txn.rollback();
+            }
+            throw  new HibernateException("Getting entity error", e);
+        }
+
+
     }
 
 
     public void update(T entity) {
-        getSession().merge(entity);
+        Transaction txn = null;
+        try ( Session session = getSession()){
+            txn = session.beginTransaction();
+            session.merge(entity);
+        } catch (Exception e) {
+            if (txn != null) {
+                e.printStackTrace();
+                txn.rollback();
+            }
+            throw  new HibernateException("Getting entity error", e);
+        }
+
     }
 
 
     public void delete(T entity) {
-        getSession().remove(entity);
+        Transaction txn = null;
+        try (Session session = getSession()){
+            txn = session.beginTransaction();
+            session.remove(entity);
+            txn.commit();
+        } catch (Exception e) {
+            if (txn != null) {
+                e.printStackTrace();
+                txn.rollback();
+            }
+            throw  new HibernateException("Getting entity error", e);
+        }
     }
 
 

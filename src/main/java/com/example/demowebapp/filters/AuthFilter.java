@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
 
-@WebFilter(filterName = "AuthFilter", urlPatterns = {"/*"})
+//@WebFilter(filterName = "AuthFilter", urlPatterns = {"/*"})
 public class AuthFilter implements Filter {
     private Map<Role, List<String>> authMap = new HashMap<>();
 
@@ -20,9 +20,9 @@ public class AuthFilter implements Filter {
     private RoleDao dao = new RoleDao();
 
     public void init(FilterConfig config) throws ServletException {
-        Role admin = dao.getByKey(1);
-        Role manager = dao.getByKey(2);
-        Role generalUser = dao.getByKey(3);
+        Role admin = new Role(1, "ADMIN", null);
+        Role manager = new Role(2, "MANAGER", null);
+        Role generalUser = new Role(3, "GENERAL_USER", null);
 
         authMap.put(admin, Arrays.asList("/show-cars", "/hello-servlet", "/blog"));
         authMap.put(manager, Arrays.asList("/hello-servlet", "/blog"));

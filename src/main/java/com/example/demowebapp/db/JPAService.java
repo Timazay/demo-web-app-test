@@ -37,32 +37,30 @@ public class JPAService implements AutoCloseable {
     private static final String FROM_FORMAT = "FROM %s";
     private static final String FROM_WHERE_FORMAT = "FROM %s WHERE %s";
 
-    private JPAService(JpaConfiguration config) {
-        Map<String, String> persistenceMap = new HashMap<String, String>();
-
-        persistenceMap.put(JAKARTA_JDBC_DRIVER, config.getDriver());
-        persistenceMap.put(JAKARTA_JDBC_URL, config.getUrl());
-        persistenceMap.put(JAKARTA_JDBC_USER, config.getUserName());
-        persistenceMap.put(JAKARTA_JDBC_PASSWORD, config.getPassword());
+    private JPAService() {
 
         entityManagerFactory = HibernateAnnotationUtil.getSessionFactory();
 
 //        entityManagerFactory = Persistence.createEntityManagerFactory(config.getPersistentUnit(), persistenceMap);
     }
 
-    public static JPAService initialize(JpaConfiguration config) {
+    public static JPAService initialize() {
         if (instance != null)
             throw new JpaException("JPAService already initialized.");
         synchronized (JPAService.class) {
             if (instance == null)
-                instance = new JPAService(config);
+                instance = new JPAService();
         }
         return instance;
     }
 
     public static JPAService getInstance() {
-        if (instance == null)
-            throw new JpaException("Initialize JPAService first.");
+        synchronized (JPAService.class) {
+            if (instance == null)
+                instance = new JPAService();
+        }
+        /*if (instance == null)
+            throw new JpaException("Initialize JPAService first.");*/
         return instance;
     }
 

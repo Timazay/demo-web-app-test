@@ -1,5 +1,6 @@
 package com.example.demowebapp;
 
+import com.example.demowebapp.dao.UsersDao;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
 import com.example.demowebapp.utils.ServletUtils;
@@ -14,7 +15,7 @@ import java.util.Date;
 
 @WebServlet(name = "LoginServlet", value = "/login")
 public class LoginServlet extends HttpServlet {
-    private UserDAO userDAO = new UserDAOImpl();
+    private UsersDao userDAO = new UsersDao();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

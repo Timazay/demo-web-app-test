@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.CreationTimestamp;
 
 import java.sql.Timestamp;
 
@@ -16,7 +17,7 @@ import java.sql.Timestamp;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_user", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private int id;
     @Column(name = "name", length = 128, nullable = false)
     private String name;
@@ -25,11 +26,12 @@ public class User {
     @Column(name = "password", length = 128, nullable = false)
     private String password;
     @ManyToOne
-    @JoinColumn(name = "id_role")
+    @JoinColumn(name = "role_id")
     private Role role;
     @Column(name = "is_active", length = 1)
     private boolean isActive;
     @Column(name = "created_ts")
+    @CreationTimestamp
     private Timestamp createdTs;
     @Column(name = "update_ts")
     private Timestamp updatedTs;

@@ -9,14 +9,9 @@ import com.example.demowebapp.entity.Product;
 
 public class NewHiberTest {
     public static void main(String[] args) {
-        JpaConfiguration jpaConfiguration = new JpaConfiguration();
-        jpaConfiguration.setUserName("root");
-        jpaConfiguration.setPassword("");
-        jpaConfiguration.setUrl("com.mysql.jdbc.Driver");
-        jpaConfiguration.setDriver("jdbc:mysql://localhost:3308/j1023_db");
-        jpaConfiguration.setPersistentUnit(Product.class.getSimpleName());
 
-        JPAService.initialize(jpaConfiguration);
+
+        JPAService.initialize();
 
         ProductDao productDao = new ProductDao();
         Product product1 = new Product();

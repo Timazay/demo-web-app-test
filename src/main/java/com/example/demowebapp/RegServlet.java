@@ -1,5 +1,7 @@
 package com.example.demowebapp;
 
+import com.example.demowebapp.dao.RolesDao;
+import com.example.demowebapp.dao.UsersDao;
 import com.example.demowebapp.model.Role;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.EncryptDecryptUtils;
@@ -13,6 +15,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.util.Date;
 
 @WebServlet(name = "RegServlet", value = "/reg")
@@ -34,18 +37,22 @@ public class RegServlet extends HttpServlet {
         if (pwd.equals(rpwd)) {
             user.setName(name);
             user.setEmail(email);
-            user.setPassword(pwd);
+            user.setPassword(EncryptDecryptUtils.encrypt(pwd));
+            user.setCreatedTs(new Timestamp(System.currentTimeMillis()));
 
-            UserDAOImpl dao = new UserDAOImpl();
+            UsersDao dao = new UsersDao();
+            RolesDao dao1 = new RolesDao();
 
             try {
-                boolean isCreated = dao.createUser(user);
+                user.setRole(dao1.findById(3));
+                dao.create(user);
+                boolean isCreated = dao.findUserByEmail(email) != null;
 
                 if (isCreated) {
                     // just created - not active
                     // send msg with instructios
 
-                    String subject ="Welcome to Crazy User App";
+                    String subject = "Welcome to Crazy User App";
                     String token = EncryptDecryptUtils.encrypt(user.getEmail());
                     System.out.println(token);
                     String msg = String.format("<b> To confirm your account, " +
@@ -56,7 +63,7 @@ public class RegServlet extends HttpServlet {
 
                     request.setAttribute("msg", "Check your email to confirm registration");
                     ServletUtils.forwardJSP("reg", request, response);
-               //     ServletUtils.forwardJSP("blog", request, response);
+                    //     ServletUtils.forwardJSP("blog", request, response);
                     return;
                 } else {
                     request.setAttribute("msg", "Error user registration");

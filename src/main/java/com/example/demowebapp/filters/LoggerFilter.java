@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.util.*;
 
-@WebFilter(filterName = "LoggerFilter", urlPatterns = {"/*"})
+//@WebFilter(filterName = "LoggerFilter", urlPatterns = {"/*"})
 public class LoggerFilter implements Filter {
 //    private Map<Role, List<String>> authMap;
 
@@ -35,6 +35,6 @@ public class LoggerFilter implements Filter {
                 + "/" + httpServletRequest.getServerPort());
         System.out.println(new Date() + "-> Requested: " + ((HttpServletRequest) request).getServletPath()
                 + "/" + ((HttpServletRequest) request).getRequestedSessionId());
-        chain.doFilter(request, response);
+//        chain.doFilter(request, response);
     }
 }

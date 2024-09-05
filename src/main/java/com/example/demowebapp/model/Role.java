@@ -17,7 +17,7 @@ import java.util.Set;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_role", unique = true, nullable = false)
+    @Column(name = "id", unique = true, nullable = false)
     private int id;
     @Column(name = "name", nullable = false)
     private String name;
@@ -25,4 +25,10 @@ public class Role {
     private String description;
     @OneToMany(mappedBy = "role")
     private Set<User> users;
+
+    public Role(int id, String name, String description) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+    }
 }

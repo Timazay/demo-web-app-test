@@ -1,5 +1,6 @@
 package com.example.demowebapp.dao;
 
+/*
 import com.example.demowebapp.model.Office;
 import com.example.demowebapp.model.User;
 import com.example.demowebapp.utils.DBUtils;
@@ -156,5 +157,5 @@ public class OfficeDAOImpl implements OfficeDao {
         }
         return offices;
     }
+*/
 
-}
